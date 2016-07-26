@@ -8,6 +8,7 @@ Sketch pad
 
 
 
-Calculator
+Calculator<br />
+http://htmlpreview.github.io/?https://github.com/rjeesoo/javascriptProjects/blob/master/160625Calculator/index.html
 
 
