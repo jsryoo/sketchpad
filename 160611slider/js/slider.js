@@ -22,7 +22,7 @@ function startSlider(){
 		sliderInt=sliderNext;
 		sliderNext=sliderNext+1;
 
-	},1000);
+	},2000);
 }
 
 function prev() {
