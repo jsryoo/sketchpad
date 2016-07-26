@@ -1,6 +1,6 @@
 # Javascript/jQuery project :
 
-Number slider
+Number slider<br />
 http://htmlpreview.github.io/?https://github.com/rjeesoo/javascriptProjects/blob/master/160611slider/index.html
 
 
