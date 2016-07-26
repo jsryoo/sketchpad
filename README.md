@@ -1,2 +1,10 @@
 # sketchpad
-Javascript/jQuery project : sketchpad and Etch-A-Sketch
+Javascript/jQuery project :
+
+Number slider
+
+Sketch pad
+
+Calculator
+
+
