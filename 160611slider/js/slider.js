@@ -22,7 +22,7 @@ function startSlider(){
 		sliderInt=sliderNext;
 		sliderNext=sliderNext+1;
 
-	},2000);
+	},1000);
 }
 
 function prev() {
@@ -100,7 +100,7 @@ function startSlider (){
 		$("#slider>img#" + sliderNext).fadeIn(300) 		 		
 		sliderInt = sliderNext; 		
 		sliderNext = sliderNext + 1; 							 							 		
-	}, 2000) 	} 	 
+	}, 1000) 	} 	 
 
 
 	function prev(){ newSlide = sliderInt-1;	 
