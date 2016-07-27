@@ -100,7 +100,7 @@ function startSlider (){
 		$("#slider>img#" + sliderNext).fadeIn(300) 		 		
 		sliderInt = sliderNext; 		
 		sliderNext = sliderNext + 1; 							 							 		
-	}, 1000) 	} 	 
+	}, 2000) 	} 	 
 
 
 	function prev(){ newSlide = sliderInt-1;	 
