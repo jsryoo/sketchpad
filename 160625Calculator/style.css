@@ -81,7 +81,7 @@ a {
 	vertical-align: middle;
 }
 
-.click {
+.line>div {
 	display: inline-block;
 	*display: inline;
 	vertical-align: top;
@@ -92,27 +92,25 @@ a {
 	border-radius: 3px;
 	font-size: 30px;
 	padding: 2% 0;
+	background-color: #e5e5e5;
+	border : 1px solid #666;
 }
 
-.click:after {
+.line>div:after {
 	width: 100%;
 	display: inline-block;
 	font-size: 0;
 	line-height: 0;
 }
 
-.digit, .operator, .equal {
-	background-color: #e5e5e5;
-	border : 1px solid #666;
-}
 
-.special {
+.line>div.special {
 	background-color: #ff0000;
 	border : 1px solid #a00000;
 
 }
 
-.click:hover {
+.line>div:hover {
 	background-color: #666;
 	color: #fff;
 }
