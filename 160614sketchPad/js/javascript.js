@@ -46,7 +46,7 @@ $(document).ready(function() {
 
 	/* Clear Button */
 	var calculateBoard = function() {
-			var promptValue = prompt("How many lines do you want?(1~60)","20");
+			var promptValue = prompt("How many lines do you want? (1~60)","20");
 			divNum = +promptValue > 0 ? promptValue : divNum;
 			divLeng = padSize / divNum;
 			padSize = divNum * divLeng;
