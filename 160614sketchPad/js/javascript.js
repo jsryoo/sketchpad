@@ -3,14 +3,14 @@ $(document).ready(function() {
 
 	var divNum=20;
 	var divLeng=35;
-	var padSize=divNum*divLeng;
+	var padSize=divNum * divLeng;
 
 	/* Create buttons */
-	$("<div></div>").appendTo('body').addClass('top').width(padSize);
+	$("<div></div>").appendTo('body').addClass('top').width(padSize*1.5);
 
 	$("<div>Etch-A-Sketch</div>").appendTo('.top').addClass('title');
 
-	/* Random color button */
+		/* Random color button */
 	$("<button>Random Color</button>").appendTo('.top').addClass('randomColor');
 
 	/* Opacity button */
@@ -20,12 +20,11 @@ $(document).ready(function() {
 	$("<button>Original Version</button>").appendTo('.top').addClass('clear');
 
 
-
 	/* Create containers */
 	var createContainers = function () {
 		$('.container').remove();
-		$("<div></div>").appendTo('body').addClass('container').height(padSize).width(padSize)
-		for (var i=0; i < divNum*divNum; i++) {
+		$("<div></div>").appendTo('body').addClass('container').height(padSize).width(padSize*1.5)
+		for (var i=0; i < divNum*divNum*1.5; i++) {
 			$("<div></div>").appendTo('.container').addClass('square');
 		}
 		$('.square').height(divLeng).width(divLeng)
@@ -47,8 +46,10 @@ $(document).ready(function() {
 
 	/* Clear Button */
 	var calculateBoard = function() {
-			divNum=prompt("How many squares per side do you want?","20");
-			divLeng=padSize/divNum;
+			var promptValue = prompt("How many lines do you want?(1~60)","20");
+			divNum = +promptValue > 0 ? promptValue : divNum;
+			divLeng = padSize / divNum;
+			padSize = divNum * divLeng;
 			createContainers();
 		};
 
@@ -84,7 +85,7 @@ $(document).ready(function() {
 	$('.opacity').click(function() {
 		calculateBoard();
 		var $hue = 0;
-		$('.square').data('hue',$hue).css({"background-color":"#FFF"});
+		$('.square').data('hue',$hue)
 		
 		/* hover effect */
 		$('.square').on('mouseenter',function() {
