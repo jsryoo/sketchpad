@@ -1,0 +1,77 @@
+@import url("reset-min.css");
+
+* {
+	font-family: ariel, sans-serif;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+}
+
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 20;
+	background-color: #ddd;
+	text-align: center;
+	z-index: 1;
+}
+
+a {
+	margin: 15px 35px;
+	display:inline-block;
+	font-size:20px; 
+	font-family: ariel, sans-serif;
+	text-decoration: none;
+	color: #333;
+}
+
+.top {
+	width: 700px;
+	height: 70px;
+	margin: 10px auto; 
+	font-size: 0;
+	display:block;
+}
+
+.title {
+	float:left;
+	margin: 10px 0;
+	padding: 10px;
+	font-size: 32px; 
+	font-weight: bold; 
+	color: #666;
+	font-family: ariel, sans-serif;
+}
+
+button {
+	margin:13px 3px;
+	padding:10px;
+	font-size:16px; 
+	background-color:#ff5900; 
+	border:1px solid #ff5900;
+	border-radius:3px; 
+	font-weight:bold; 
+	color:#fff;
+	float:right;
+}
+
+.container {
+	margin: 0 auto 10% auto;
+	font-size:0;
+}
+
+.square {
+	border: 0; 
+	display:inline-block; 
+	background-color:#ddd
+}
+
+.trail {
+	background-color: #444
+}
+
