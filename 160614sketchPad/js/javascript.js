@@ -3,21 +3,22 @@ $(document).ready(function() {
 
 	var divNum=20;
 	var divLeng=35;
-	var padSize=700;
+	var padSize=divNum*divLeng;
 
 	/* Create buttons */
 	$("<div></div>").appendTo('body').addClass('top').width(padSize);
 
 	$("<div>Etch-A-Sketch</div>").appendTo('.top').addClass('title');
 
-	/* Clear button */
-	$("<button>Clear</button>").appendTo('.top').addClass('clear');
-
 	/* Random color button */
 	$("<button>Random Color</button>").appendTo('.top').addClass('randomColor');
 
 	/* Opacity button */
 	$("<button>Opacity</button>").appendTo('.top').addClass('opacity')
+
+	/* Clear button */
+	$("<button>Original Version</button>").appendTo('.top').addClass('clear');
+
 
 
 	/* Create containers */
