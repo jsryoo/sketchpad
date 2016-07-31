@@ -115,7 +115,7 @@ a {
 	color: #fff;
 }
 
-script {
+script, link {
 	display: none;
 }
 
